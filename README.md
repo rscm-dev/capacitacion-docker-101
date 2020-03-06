@@ -5,5 +5,5 @@ Como usar
 Utilice el siguiente comando para ejecutar
 
     
-    docker run ....
+    docker ....
      
