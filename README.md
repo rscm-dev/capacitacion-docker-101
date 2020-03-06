@@ -1,2 +1,8 @@
-# capacitacion-docker-101
-Capacitación de Docker 101
+# Capacitacion docker 101
+
+Como usar
+--
+Utilice el siguiente comando para ejecutar
+'''
+docker run ....
+'''
