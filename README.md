@@ -3,6 +3,7 @@
 Como usar
 --
 Utilice el siguiente comando para ejecutar
-'''
+
+'''bash
 docker run ....
 '''
