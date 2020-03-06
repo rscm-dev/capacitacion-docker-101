@@ -14,9 +14,10 @@ Creamos  host 1: web-01 (nginx), host 2: desktop01, este último debe crearse de
     - Proyecto en Github
       - Dockerfile
       - docker-sompose
+    - Imagenes publicas en hub.docker.com
       
 Evaluación
 -
   - Github URL
   - Archivo Readme.md
-  - docker-compose up -d ....
+  - docker pull cuentapropia/nombreimagen:latest
