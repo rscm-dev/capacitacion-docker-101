@@ -1,0 +1,30 @@
+
+version: '3.3'
+
+services:
+   web:
+      build:
+        context: ./php
+        dockerfile: Dockerfile
+      container_name: php73-server
+      depends_on: 
+        - db
+      volumes:
+        - ./php:/var/www/html/
+      ports:
+        - "8080:80"
+   db:
+    build:
+      context: ./mysql
+      dockerfile: Dockerfile
+    container_name: mysql8-server
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: examen_docker
+      MYSQL_USER: examenuser
+      MYSQL_PASSWORD: examenpass
+    ports:
+        - "6033:3306"
+      
